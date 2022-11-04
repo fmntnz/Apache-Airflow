@@ -1,0 +1,34 @@
+[2022-11-04T19:49:25.450+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.TASK1 scheduled__2022-05-28T00:00:00+00:00 [queued]>
+[2022-11-04T19:49:26.389+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.TASK1 scheduled__2022-05-28T00:00:00+00:00 [queued]>
+[2022-11-04T19:49:26.390+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T19:49:26.390+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T19:49:26.826+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T19:49:27.689+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): TASK1> on 2022-05-28 00:00:00+00:00
+[2022-11-04T19:49:27.696+0000] {standard_task_runner.py:55} INFO - Started process 313 to run task
+[2022-11-04T19:49:27.700+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'TASK1', 'scheduled__2022-05-28T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmpv688956r']
+[2022-11-04T19:49:27.701+0000] {standard_task_runner.py:83} INFO - Job 30: Subtask TASK1
+[2022-11-04T19:49:28.009+0000] {task_command.py:376} INFO - Running <TaskInstance: orquestation.TASK1 scheduled__2022-05-28T00:00:00+00:00 [running]> on host 208ed96b478a
+[2022-11-04T19:49:28.244+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=orquestation
+AIRFLOW_CTX_TASK_ID=TASK1
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-28T00:00:00+00:00
+[2022-11-04T19:49:28.256+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-04T19:49:28.279+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "SLEEP 2 && ECHO 'TASK1'"]
+[2022-11-04T19:49:28.335+0000] {subprocess.py:86} INFO - Output:
+[2022-11-04T19:49:28.874+0000] {subprocess.py:93} INFO - /bin/bash: line 1: SLEEP: command not found
+[2022-11-04T19:49:28.946+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2022-11-04T19:49:29.528+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2022-11-04T19:49:29.551+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=orquestation, task_id=TASK1, execution_date=20220528T000000, start_date=20221104T194926, end_date=20221104T194929
+[2022-11-04T19:49:29.608+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 30 for task TASK1 (Bash command failed. The command returned a non-zero exit code 127.; 313)
+[2022-11-04T19:49:29.645+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-04T19:49:29.812+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

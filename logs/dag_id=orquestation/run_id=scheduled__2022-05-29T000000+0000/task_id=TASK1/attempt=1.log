@@ -1,0 +1,7 @@
+[2022-11-04T19:49:30.701+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.TASK1 scheduled__2022-05-29T00:00:00+00:00 [queued]>
+[2022-11-04T19:49:30.779+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.TASK1 scheduled__2022-05-29T00:00:00+00:00 [queued]>
+[2022-11-04T19:49:30.780+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T19:49:30.781+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T19:49:30.795+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
