@@ -23,10 +23,4 @@ with DAG(dag_id="8-templating",
         params={"filename":["file1.txt","file2.txt"]},
         depends_on_past=True
     )
-    t2 = FileSensor(task_id="waiting_file",
-                    filepath="/tmp/file.txt")
-    t3 = BashOperator(
-        task_id="end_task",
-        bash_command='echo "The file was created successfully"'
-    )
-    t1 >> t2 >> t3
+    t1 
