@@ -3,7 +3,7 @@ from airflow.operators.bash import BashOperator
 from airflow import DAG
 
 
-with DAG(dag_id="bashoperator",
+with DAG(dag_id="1-bashoperator",
     description="Utilizando bash Operator",
     start_date=datetime(2022, 11, 1)    
 ) as dag:

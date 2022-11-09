@@ -1,0 +1,56 @@
+[2022-11-04T21:33:54.803+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:33:54.827+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:33:54.828+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:33:54.828+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T21:33:54.830+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:33:54.865+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task3> on 2022-05-30 00:00:00+00:00
+[2022-11-04T21:33:54.874+0000] {standard_task_runner.py:55} INFO - Started process 1207 to run task
+[2022-11-04T21:33:54.879+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'task3', 'scheduled__2022-05-30T00:00:00+00:00', '--job-id', '230', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmpwoc799ho']
+[2022-11-04T21:33:54.880+0000] {standard_task_runner.py:83} INFO - Job 230: Subtask task3
+[2022-11-04T21:33:54.970+0000] {task_command.py:376} INFO - Running <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [running]> on host 643e334f405f
+[2022-11-04T21:33:55.073+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=orquestation
+AIRFLOW_CTX_TASK_ID=task3
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-30T00:00:00+00:00
+[2022-11-04T21:33:55.075+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-04T21:33:55.076+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task3'"]
+[2022-11-04T21:33:55.092+0000] {subprocess.py:86} INFO - Output:
+[2022-11-04T21:33:57.110+0000] {subprocess.py:93} INFO - task3
+[2022-11-04T21:33:57.111+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-04T21:33:57.186+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=orquestation, task_id=task3, execution_date=20220530T000000, start_date=20221104T213354, end_date=20221104T213357
+[2022-11-04T21:33:57.259+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-04T21:33:57.356+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-04T21:45:26.638+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:45:26.654+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:45:26.655+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:45:26.655+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T21:45:26.656+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:45:26.679+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task3> on 2022-05-30 00:00:00+00:00
+[2022-11-04T21:45:26.688+0000] {standard_task_runner.py:55} INFO - Started process 2314 to run task
+[2022-11-04T21:45:26.691+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'task3', 'scheduled__2022-05-30T00:00:00+00:00', '--job-id', '374', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmph_woc_kz']
+[2022-11-04T21:45:26.692+0000] {standard_task_runner.py:83} INFO - Job 374: Subtask task3
+[2022-11-04T21:45:26.757+0000] {task_command.py:376} INFO - Running <TaskInstance: orquestation.task3 scheduled__2022-05-30T00:00:00+00:00 [running]> on host 643e334f405f
+[2022-11-04T21:45:26.831+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=orquestation
+AIRFLOW_CTX_TASK_ID=task3
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-30T00:00:00+00:00
+[2022-11-04T21:45:26.833+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-04T21:45:26.834+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task3'"]
+[2022-11-04T21:45:26.846+0000] {subprocess.py:86} INFO - Output:
+[2022-11-04T21:45:28.849+0000] {subprocess.py:93} INFO - task3
+[2022-11-04T21:45:28.850+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-04T21:45:28.878+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=orquestation, task_id=task3, execution_date=20220530T000000, start_date=20221104T214526, end_date=20221104T214528
+[2022-11-04T21:45:28.911+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-04T21:45:28.933+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

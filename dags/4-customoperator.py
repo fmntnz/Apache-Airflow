@@ -4,7 +4,7 @@ from airflow import DAG
 from hellooperator import HelloOperator
 
 
-with DAG(dag_id="customoperator",
+with DAG(dag_id="4-customoperator",
     description="Utilizando Custom Operator",
     start_date=datetime(2022, 11, 1)    
 ) as dag:

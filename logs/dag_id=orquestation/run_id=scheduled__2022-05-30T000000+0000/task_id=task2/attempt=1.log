@@ -1,0 +1,168 @@
+[2022-11-04T21:13:39.847+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:13:39.877+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:13:39.878+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:13:39.879+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T21:13:39.881+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:13:39.917+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task2> on 2022-05-30 00:00:00+00:00
+[2022-11-04T21:13:39.931+0000] {standard_task_runner.py:55} INFO - Started process 448 to run task
+[2022-11-04T21:13:39.938+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'task2', 'scheduled__2022-05-30T00:00:00+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmpw7ad7brr']
+[2022-11-04T21:13:39.939+0000] {standard_task_runner.py:83} INFO - Job 108: Subtask task2
+[2022-11-04T21:14:07.435+0000] {base_job.py:232} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 204, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2961, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3039, in _merge
+    options=options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2775, in get
+    identity_token=identity_token,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2878, in _get_impl
+    load_options=load_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 534, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1530, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3197, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3276, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3247, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2101, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3243, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 371, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 666, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 590, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-11-04T21:27:38.005+0000] {local_task_job.py:148} ERROR - Heartbeat time limit exceeded!
+[2022-11-04T21:27:38.022+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 448. PIDs of all processes in the group: [448]
+[2022-11-04T21:27:38.024+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 448
+[2022-11-04T21:27:38.040+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=448, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='21:13:39') (448) terminated with exit code Negsignal.SIGTERM
+[2022-11-04T21:33:50.748+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:33:50.778+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:33:50.778+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:33:50.779+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T21:33:50.780+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:33:50.804+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task2> on 2022-05-30 00:00:00+00:00
+[2022-11-04T21:33:50.812+0000] {standard_task_runner.py:55} INFO - Started process 1181 to run task
+[2022-11-04T21:33:50.819+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'task2', 'scheduled__2022-05-30T00:00:00+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmprtr6jgde']
+[2022-11-04T21:33:50.820+0000] {standard_task_runner.py:83} INFO - Job 225: Subtask task2
+[2022-11-04T21:33:50.916+0000] {task_command.py:376} INFO - Running <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [running]> on host 643e334f405f
+[2022-11-04T21:33:51.034+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=orquestation
+AIRFLOW_CTX_TASK_ID=task2
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-30T00:00:00+00:00
+[2022-11-04T21:33:51.036+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-04T21:33:51.038+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task2'"]
+[2022-11-04T21:33:51.056+0000] {subprocess.py:86} INFO - Output:
+[2022-11-04T21:33:53.075+0000] {subprocess.py:93} INFO - task2
+[2022-11-04T21:33:53.076+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-04T21:33:53.119+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=orquestation, task_id=task2, execution_date=20220530T000000, start_date=20221104T213350, end_date=20221104T213353
+[2022-11-04T21:33:53.156+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-04T21:33:53.197+0000] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-11-04T21:45:23.672+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:45:23.687+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [queued]>
+[2022-11-04T21:45:23.687+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:45:23.688+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-04T21:45:23.688+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-04T21:45:23.703+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task2> on 2022-05-30 00:00:00+00:00
+[2022-11-04T21:45:23.710+0000] {standard_task_runner.py:55} INFO - Started process 2308 to run task
+[2022-11-04T21:45:23.713+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'orquestation', 'task2', 'scheduled__2022-05-30T00:00:00+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/5.1-orquestacion.py', '--cfg-path', '/tmp/tmp8nglycml']
+[2022-11-04T21:45:23.713+0000] {standard_task_runner.py:83} INFO - Job 372: Subtask task2
+[2022-11-04T21:45:23.778+0000] {task_command.py:376} INFO - Running <TaskInstance: orquestation.task2 scheduled__2022-05-30T00:00:00+00:00 [running]> on host 643e334f405f
+[2022-11-04T21:45:23.851+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=orquestation
+AIRFLOW_CTX_TASK_ID=task2
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-30T00:00:00+00:00
+[2022-11-04T21:45:23.852+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-04T21:45:23.853+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task2'"]
+[2022-11-04T21:45:23.866+0000] {subprocess.py:86} INFO - Output:
+[2022-11-04T21:45:25.870+0000] {subprocess.py:93} INFO - task2
+[2022-11-04T21:45:25.871+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-04T21:45:25.897+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=orquestation, task_id=task2, execution_date=20220530T000000, start_date=20221104T214523, end_date=20221104T214525
+[2022-11-04T21:45:25.933+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-04T21:45:25.966+0000] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check

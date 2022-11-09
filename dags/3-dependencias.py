@@ -6,7 +6,7 @@ from airflow.operators.bash import BashOperator
 def print_hello():
     print("Hi Platzi People")
 
-with DAG(dag_id="dependencias",
+with DAG(dag_id="3-dependencias",
     description="Primer DAG with Dependencies",
     schedule_interval= "@once",
     start_date=datetime(2022, 11, 1)

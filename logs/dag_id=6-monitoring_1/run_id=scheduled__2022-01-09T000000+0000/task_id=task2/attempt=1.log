@@ -1,0 +1,63 @@
+[2022-11-08T17:45:01.659+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [queued]>
+[2022-11-08T17:45:01.688+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [queued]>
+[2022-11-08T17:45:01.691+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T17:45:01.692+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-08T17:45:01.693+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T17:45:01.726+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task2> on 2022-01-09 00:00:00+00:00
+[2022-11-08T17:45:01.743+0000] {standard_task_runner.py:55} INFO - Started process 679 to run task
+[2022-11-08T17:45:01.749+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '6-monitoring_1', 'task2', 'scheduled__2022-01-09T00:00:00+00:00', '--job-id', '411', '--raw', '--subdir', 'DAGS_FOLDER/6.1-monitoring.py', '--cfg-path', '/tmp/tmpwxfond9d']
+[2022-11-08T17:45:01.751+0000] {standard_task_runner.py:83} INFO - Job 411: Subtask task2
+[2022-11-08T17:45:01.941+0000] {task_command.py:376} INFO - Running <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-08T17:45:02.100+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=6-monitoring_1
+AIRFLOW_CTX_TASK_ID=task2
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-09T00:00:00+00:00
+[2022-11-08T17:45:02.115+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-08T17:45:02.118+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task2!"]
+[2022-11-08T17:45:02.148+0000] {subprocess.py:86} INFO - Output:
+[2022-11-08T17:45:02.238+0000] {subprocess.py:93} INFO - /bin/bash: -c: line 1: unexpected EOF while looking for matching `''
+[2022-11-08T17:45:02.239+0000] {subprocess.py:93} INFO - /bin/bash: -c: line 2: syntax error: unexpected end of file
+[2022-11-08T17:45:02.240+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2022-11-08T17:45:02.263+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-11-08T17:45:02.278+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=6-monitoring_1, task_id=task2, execution_date=20220109T000000, start_date=20221108T174501, end_date=20221108T174502
+[2022-11-08T17:45:02.316+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 411 for task task2 (Bash command failed. The command returned a non-zero exit code 2.; 679)
+[2022-11-08T17:45:02.380+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-08T17:45:02.440+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-08T20:52:21.658+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [queued]>
+[2022-11-08T20:52:21.853+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [queued]>
+[2022-11-08T20:52:21.855+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T20:52:21.856+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-08T20:52:21.858+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-08T20:52:21.944+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task2> on 2022-01-09 00:00:00+00:00
+[2022-11-08T20:52:21.964+0000] {standard_task_runner.py:55} INFO - Started process 3853 to run task
+[2022-11-08T20:52:21.979+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '6-monitoring_1', 'task2', 'scheduled__2022-01-09T00:00:00+00:00', '--job-id', '572', '--raw', '--subdir', 'DAGS_FOLDER/6.1-monitoring.py', '--cfg-path', '/tmp/tmpedcjcn37']
+[2022-11-08T20:52:21.982+0000] {standard_task_runner.py:83} INFO - Job 572: Subtask task2
+[2022-11-08T20:52:22.280+0000] {task_command.py:376} INFO - Running <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-09T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-08T20:52:23.275+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=6-monitoring_1
+AIRFLOW_CTX_TASK_ID=task2
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-09T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-09T00:00:00+00:00
+[2022-11-08T20:52:23.423+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-08T20:52:23.431+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "sleep 2 && echo 'task2'"]
+[2022-11-08T20:52:23.515+0000] {subprocess.py:86} INFO - Output:
+[2022-11-08T20:52:25.795+0000] {subprocess.py:93} INFO - task2
+[2022-11-08T20:52:25.798+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-08T20:52:25.889+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=6-monitoring_1, task_id=task2, execution_date=20220109T000000, start_date=20221108T205221, end_date=20221108T205225
+[2022-11-08T20:52:26.093+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-08T20:52:26.173+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
