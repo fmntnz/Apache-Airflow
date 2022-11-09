@@ -1,7 +1,0 @@
-[2022-11-05T01:08:06.528+0000] {processor.py:154} INFO - Started process (PID=5604) to work on /opt/airflow/dags/5.1-orquestacion.py
-[2022-11-05T01:08:06.530+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/5.1-orquestacion.py for tasks to queue
-[2022-11-05T01:08:06.532+0000] {logging_mixin.py:120} INFO - [2022-11-05T01:08:06.531+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/5.1-orquestacion.py
-[2022-11-05T01:08:06.579+0000] {processor.py:766} INFO - DAG(s) dict_keys(['orquestation']) retrieved from /opt/airflow/dags/5.1-orquestacion.py
-[2022-11-05T01:08:06.729+0000] {logging_mixin.py:120} INFO - [2022-11-05T01:08:06.728+0000] {dag.py:2585} INFO - Sync 1 DAGs
-[2022-11-05T01:08:06.759+0000] {logging_mixin.py:120} INFO - [2022-11-05T01:08:06.759+0000] {dag.py:3340} INFO - Setting next_dagrun for orquestation to None, run_after=None
-[2022-11-05T01:08:06.811+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/5.1-orquestacion.py took 0.287 seconds
