@@ -1,3 +1,0 @@
-[2022-11-08T20:52:21.678+0000] {taskinstance.py:1159} INFO - Dependencies not met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-11T00:00:00+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-01-11T00:00:00+00:00 but this is after the task's end date 2022-01-10T00:00:00+00:00.
-[2022-11-08T20:52:21.782+0000] {taskinstance.py:1159} INFO - Dependencies not met for <TaskInstance: 6-monitoring_1.task2 scheduled__2022-01-11T00:00:00+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-01-11T00:00:00+00:00 but this is after the task's DAG's end date 2022-01-10T00:00:00+00:00.
-[2022-11-08T20:52:21.799+0000] {local_task_job.py:103} INFO - Task is not able to be run
