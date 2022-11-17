@@ -1,0 +1,28 @@
+[2022-11-17T16:50:26.876+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T16:50:26.893+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T16:50:26.894+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:50:26.896+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:50:26.896+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:50:26.917+0000] {taskinstance.py:1383} INFO - Executing <Task(NotifyOperator): Data_Team_Notification> on 2022-11-16 00:00:00+00:00
+[2022-11-17T16:50:26.924+0000] {standard_task_runner.py:55} INFO - Started process 5231 to run task
+[2022-11-17T16:50:26.928+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Data_Team_Notification', 'scheduled__2022-11-16T00:00:00+00:00', '--job-id', '2399', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpvof8o9ba']
+[2022-11-17T16:50:26.929+0000] {standard_task_runner.py:83} INFO - Job 2399: Subtask Data_Team_Notification
+[2022-11-17T16:50:27.082+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-16T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:50:27.184+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Data_Team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-16T00:00:00+00:00
+[2022-11-17T16:50:27.187+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/FinalPersonalProject_Notification.py", line 9, in execute
+    print(f"Hi Data team, Space X data for {ds} are now available!.. Please check them out!")
+NameError: name 'ds' is not defined
+[2022-11-17T16:50:27.219+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=MyPersonalAirflowProject, task_id=Data_Team_Notification, execution_date=20221116T000000, start_date=20221117T165026, end_date=20221117T165027
+[2022-11-17T16:50:27.242+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 2399 for task Data_Team_Notification (name 'ds' is not defined; 5231)
+[2022-11-17T16:50:27.262+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-17T16:50:27.285+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

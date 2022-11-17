@@ -1,0 +1,14 @@
+[2022-11-10T04:14:05.765+0000] {processor.py:154} INFO - Started process (PID=2031) to work on /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:05.766+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/7.1-externaltasksensor.py for tasks to queue
+[2022-11-10T04:14:05.768+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:05.767+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:05.817+0000] {processor.py:766} INFO - DAG(s) dict_keys(['7-externalTaskSensor_1']) retrieved from /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:05.875+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:05.874+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:05.925+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:05.925+0000] {dag.py:3340} INFO - Setting next_dagrun for 7-externalTaskSensor_1 to 2022-07-22T00:00:00+00:00, run_after=2022-07-23T00:00:00+00:00
+[2022-11-10T04:14:06.023+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/7.1-externaltasksensor.py took 0.261 seconds
+[2022-11-10T04:14:37.692+0000] {processor.py:154} INFO - Started process (PID=2071) to work on /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:37.701+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/7.1-externaltasksensor.py for tasks to queue
+[2022-11-10T04:14:37.703+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:37.702+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:37.928+0000] {processor.py:766} INFO - DAG(s) dict_keys(['7-externalTaskSensor_1']) retrieved from /opt/airflow/dags/7.1-externaltasksensor.py
+[2022-11-10T04:14:37.999+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:37.998+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:38.056+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:38.056+0000] {dag.py:3340} INFO - Setting next_dagrun for 7-externalTaskSensor_1 to 2022-07-22T00:00:00+00:00, run_after=2022-07-23T00:00:00+00:00
+[2022-11-10T04:14:38.146+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/7.1-externaltasksensor.py took 0.713 seconds

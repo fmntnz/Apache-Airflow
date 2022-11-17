@@ -1,0 +1,31 @@
+[2022-11-15T17:03:21.096+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 8-templating.task1 scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2022-11-15T17:03:21.111+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 8-templating.task1 scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2022-11-15T17:03:21.112+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-15T17:03:21.112+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-15T17:03:21.113+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-15T17:03:21.133+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task1> on 2022-07-31 00:00:00+00:00
+[2022-11-15T17:03:21.141+0000] {standard_task_runner.py:55} INFO - Started process 1919 to run task
+[2022-11-15T17:03:21.145+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '8-templating', 'task1', 'scheduled__2022-07-31T00:00:00+00:00', '--job-id', '1099', '--raw', '--subdir', 'DAGS_FOLDER/8-templating.py', '--cfg-path', '/tmp/tmp7sd73v1p']
+[2022-11-15T17:03:21.146+0000] {standard_task_runner.py:83} INFO - Job 1099: Subtask task1
+[2022-11-15T17:03:21.230+0000] {task_command.py:376} INFO - Running <TaskInstance: 8-templating.task1 scheduled__2022-07-31T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-15T17:03:21.315+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=8-templating
+AIRFLOW_CTX_TASK_ID=task1
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-31T00:00:00+00:00
+[2022-11-15T17:03:21.316+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-15T17:03:21.318+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n\n    echo "2022-07-31"\n    echo "file1.txt"\n\n    echo "2022-07-31"\n    echo "file2.txt"\n']
+[2022-11-15T17:03:21.330+0000] {subprocess.py:86} INFO - Output:
+[2022-11-15T17:03:21.331+0000] {subprocess.py:93} INFO - 2022-07-31
+[2022-11-15T17:03:21.331+0000] {subprocess.py:93} INFO - file1.txt
+[2022-11-15T17:03:21.332+0000] {subprocess.py:93} INFO - 2022-07-31
+[2022-11-15T17:03:21.333+0000] {subprocess.py:93} INFO - file2.txt
+[2022-11-15T17:03:21.333+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-15T17:03:21.361+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=8-templating, task_id=task1, execution_date=20220731T000000, start_date=20221115T170321, end_date=20221115T170321
+[2022-11-15T17:03:21.399+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-15T17:03:21.419+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

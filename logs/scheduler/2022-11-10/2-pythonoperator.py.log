@@ -1,0 +1,14 @@
+[2022-11-10T04:14:07.643+0000] {processor.py:154} INFO - Started process (PID=2043) to work on /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:07.647+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/2-pythonoperator.py for tasks to queue
+[2022-11-10T04:14:07.653+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:07.652+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:07.751+0000] {processor.py:766} INFO - DAG(s) dict_keys(['2-pythonoperator']) retrieved from /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:07.931+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:07.930+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:07.983+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:07.982+0000] {dag.py:3340} INFO - Setting next_dagrun for 2-pythonoperator to 2022-11-01T00:00:00+00:00, run_after=2022-11-01T00:00:00+00:00
+[2022-11-10T04:14:08.121+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/2-pythonoperator.py took 0.483 seconds
+[2022-11-10T04:14:38.634+0000] {processor.py:154} INFO - Started process (PID=2076) to work on /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:38.642+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/2-pythonoperator.py for tasks to queue
+[2022-11-10T04:14:38.644+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:38.643+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:38.712+0000] {processor.py:766} INFO - DAG(s) dict_keys(['2-pythonoperator']) retrieved from /opt/airflow/dags/2-pythonoperator.py
+[2022-11-10T04:14:38.924+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:38.923+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:38.986+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:38.986+0000] {dag.py:3340} INFO - Setting next_dagrun for 2-pythonoperator to 2022-11-01T00:00:00+00:00, run_after=2022-11-01T00:00:00+00:00
+[2022-11-10T04:14:39.069+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/2-pythonoperator.py took 0.440 seconds

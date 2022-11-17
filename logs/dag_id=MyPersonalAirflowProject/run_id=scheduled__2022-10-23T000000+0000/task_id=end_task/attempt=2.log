@@ -1,0 +1,56 @@
+[2022-11-16T21:29:31.866+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-16T21:29:31.882+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-16T21:29:31.883+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:29:31.931+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-11-16T21:29:31.932+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:29:32.208+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): end_task> on 2022-10-23 00:00:00+00:00
+[2022-11-16T21:29:32.214+0000] {standard_task_runner.py:55} INFO - Started process 2811 to run task
+[2022-11-16T21:29:32.217+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'end_task', 'scheduled__2022-10-23T00:00:00+00:00', '--job-id', '1372', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpief63u34']
+[2022-11-16T21:29:32.218+0000] {standard_task_runner.py:83} INFO - Job 1372: Subtask end_task
+[2022-11-16T21:29:32.857+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T21:29:33.842+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=end_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-23T00:00:00+00:00
+[2022-11-16T21:29:33.844+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T21:29:33.845+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "The file was created successfully"']
+[2022-11-16T21:29:33.857+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T21:29:34.550+0000] {subprocess.py:93} INFO - The file was created successfully
+[2022-11-16T21:29:34.551+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-16T21:29:34.729+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=end_task, execution_date=20221023T000000, start_date=20221116T212931, end_date=20221116T212934
+[2022-11-16T21:29:34.981+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T21:29:35.129+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T15:56:01.094+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T15:56:01.111+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T15:56:01.112+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T15:56:01.112+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-11-17T15:56:01.113+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T15:56:01.132+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): end_task> on 2022-10-23 00:00:00+00:00
+[2022-11-17T15:56:01.140+0000] {standard_task_runner.py:55} INFO - Started process 1096 to run task
+[2022-11-17T15:56:01.143+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'end_task', 'scheduled__2022-10-23T00:00:00+00:00', '--job-id', '1876', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp62cphcla']
+[2022-11-17T15:56:01.144+0000] {standard_task_runner.py:83} INFO - Job 1876: Subtask end_task
+[2022-11-17T15:56:01.221+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.end_task scheduled__2022-10-23T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T15:56:01.305+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=end_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-23T00:00:00+00:00
+[2022-11-17T15:56:01.307+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T15:56:01.308+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "The Verification file was created successfully"']
+[2022-11-17T15:56:01.320+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T15:56:01.321+0000] {subprocess.py:93} INFO - The Verification file was created successfully
+[2022-11-17T15:56:01.322+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T15:56:01.355+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=end_task, execution_date=20221023T000000, start_date=20221117T155601, end_date=20221117T155601
+[2022-11-17T15:56:01.396+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T15:56:01.433+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

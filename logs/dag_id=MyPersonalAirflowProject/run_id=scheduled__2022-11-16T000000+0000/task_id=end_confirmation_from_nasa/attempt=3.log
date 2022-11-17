@@ -1,0 +1,28 @@
+[2022-11-17T16:58:07.388+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_confirmation_from_nasa scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T16:58:07.406+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.end_confirmation_from_nasa scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T16:58:07.407+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:58:07.426+0000] {taskinstance.py:1363} INFO - Starting attempt 3 of 3
+[2022-11-17T16:58:07.426+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:58:07.699+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): end_confirmation_from_nasa> on 2022-11-16 00:00:00+00:00
+[2022-11-17T16:58:07.707+0000] {standard_task_runner.py:55} INFO - Started process 5634 to run task
+[2022-11-17T16:58:07.709+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'end_confirmation_from_nasa', 'scheduled__2022-11-16T00:00:00+00:00', '--job-id', '2418', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpnoctsi9g']
+[2022-11-17T16:58:07.710+0000] {standard_task_runner.py:83} INFO - Job 2418: Subtask end_confirmation_from_nasa
+[2022-11-17T16:58:07.783+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.end_confirmation_from_nasa scheduled__2022-11-16T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:58:07.916+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=end_confirmation_from_nasa
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-16T00:00:00+00:00
+[2022-11-17T16:58:07.918+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T16:58:07.919+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "The Confirmation file was created successfully"']
+[2022-11-17T16:58:07.929+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T16:58:07.931+0000] {subprocess.py:93} INFO - The Confirmation file was created successfully
+[2022-11-17T16:58:07.931+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T16:58:07.958+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=end_confirmation_from_nasa, execution_date=20221116T000000, start_date=20221117T165807, end_date=20221117T165807
+[2022-11-17T16:58:08.004+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:58:08.043+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

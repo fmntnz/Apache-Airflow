@@ -1,0 +1,29 @@
+[2022-11-15T21:06:30.906+0000] {taskinstance.py:1159} INFO - Dependencies not met for <TaskInstance: 10-branching.branch scheduled__2022-07-03T00:00:00+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-07-03T00:00:00+00:00 but this is after the task's end date 2022-07-01T00:00:00+00:00.
+[2022-11-15T21:06:30.969+0000] {local_task_job.py:103} INFO - Task is not able to be run
+[2022-11-15T21:12:17.678+0000] {taskinstance.py:1159} INFO - Dependencies not met for <TaskInstance: 10-branching.branch scheduled__2022-07-03T00:00:00+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-07-03T00:00:00+00:00 but this is after the task's end date 2022-07-01T00:00:00+00:00.
+[2022-11-15T21:12:17.703+0000] {local_task_job.py:103} INFO - Task is not able to be run
+[2022-11-16T20:25:32.214+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 10-branching.branch scheduled__2022-07-03T00:00:00+00:00 [queued]>
+[2022-11-16T20:25:32.247+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 10-branching.branch scheduled__2022-07-03T00:00:00+00:00 [queued]>
+[2022-11-16T20:25:32.249+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T20:25:32.249+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T20:25:32.251+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T20:25:32.341+0000] {taskinstance.py:1383} INFO - Executing <Task(BranchPythonOperator): branch> on 2022-07-03 00:00:00+00:00
+[2022-11-16T20:25:32.375+0000] {standard_task_runner.py:55} INFO - Started process 89 to run task
+[2022-11-16T20:25:33.020+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '10-branching', 'branch', 'scheduled__2022-07-03T00:00:00+00:00', '--job-id', '1225', '--raw', '--subdir', 'DAGS_FOLDER/10-branchpythonoperator.py', '--cfg-path', '/tmp/tmphs_ial1v']
+[2022-11-16T20:25:33.021+0000] {standard_task_runner.py:83} INFO - Job 1225: Subtask branch
+[2022-11-16T20:25:34.838+0000] {task_command.py:376} INFO - Running <TaskInstance: 10-branching.branch scheduled__2022-07-03T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T20:25:35.423+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=10-branching
+AIRFLOW_CTX_TASK_ID=branch
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-03T00:00:00+00:00
+[2022-11-16T20:25:35.426+0000] {python.py:177} INFO - Done. Returned value was: finish_14_june
+[2022-11-16T20:25:35.427+0000] {skipmixin.py:155} INFO - Following branch finish_14_june
+[2022-11-16T20:25:35.429+0000] {skipmixin.py:190} INFO - Skipping tasks ['start_15_june']
+[2022-11-16T20:25:35.762+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=10-branching, task_id=branch, execution_date=20220703T000000, start_date=20221116T202532, end_date=20221116T202535
+[2022-11-16T20:25:35.825+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T20:25:35.990+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

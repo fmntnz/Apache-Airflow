@@ -1,0 +1,90 @@
+[2022-11-16T22:25:50.292+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-16T22:25:50.308+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-16T22:25:50.309+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:25:50.310+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T22:25:50.310+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:25:50.335+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): SpaceX_data> on 2022-10-26 00:00:00+00:00
+[2022-11-16T22:25:50.346+0000] {standard_task_runner.py:55} INFO - Started process 5787 to run task
+[2022-11-16T22:25:50.351+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'SpaceX_data', 'scheduled__2022-10-26T00:00:00+00:00', '--job-id', '1593', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpa8y6uqg2']
+[2022-11-16T22:25:50.352+0000] {standard_task_runner.py:83} INFO - Job 1593: Subtask SpaceX_data
+[2022-11-16T22:25:50.441+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T22:25:50.536+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=SpaceX_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T00:00:00+00:00
+[2022-11-16T22:25:50.538+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T22:25:50.539+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "curl -o /tmp/history.json -L 'https://api.spacexdata.com/v4/history'"]
+[2022-11-16T22:25:50.558+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T22:25:50.567+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2022-11-16T22:25:50.568+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2022-11-16T22:25:50.873+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6756    0  6756    0     0  22150      0 --:--:-- --:--:-- --:--:-- 22150
+[2022-11-16T22:25:50.876+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-16T22:25:50.911+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=SpaceX_data, execution_date=20221026T000000, start_date=20221116T222550, end_date=20221116T222550
+[2022-11-16T22:25:50.941+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T22:25:50.980+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T16:37:35.535+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-17T16:37:35.548+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-17T16:37:35.548+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:37:35.549+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:37:35.549+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:37:35.566+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): SpaceX_data> on 2022-10-26 00:00:00+00:00
+[2022-11-17T16:37:35.572+0000] {standard_task_runner.py:55} INFO - Started process 4129 to run task
+[2022-11-17T16:37:35.575+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'SpaceX_data', 'scheduled__2022-10-26T00:00:00+00:00', '--job-id', '2227', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp93vd2ryf']
+[2022-11-17T16:37:35.576+0000] {standard_task_runner.py:83} INFO - Job 2227: Subtask SpaceX_data
+[2022-11-17T16:37:35.645+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:37:35.727+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=SpaceX_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T00:00:00+00:00
+[2022-11-17T16:37:35.728+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T16:37:35.729+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "curl -o /tmp/history.json -L 'https://api.spacexdata.com/v4/history'"]
+[2022-11-17T16:37:35.740+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T16:37:35.747+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2022-11-17T16:37:35.748+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2022-11-17T16:37:35.917+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6756    0  6756    0     0  39976      0 --:--:-- --:--:-- --:--:-- 39976
+[2022-11-17T16:37:35.919+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T16:37:35.948+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=SpaceX_data, execution_date=20221026T000000, start_date=20221117T163735, end_date=20221117T163735
+[2022-11-17T16:37:35.989+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:37:36.129+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:29:14.153+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-17T17:29:14.169+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-17T17:29:14.170+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:29:14.170+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:29:14.171+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:29:14.192+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): SpaceX_data> on 2022-10-26 00:00:00+00:00
+[2022-11-17T17:29:14.199+0000] {standard_task_runner.py:55} INFO - Started process 7771 to run task
+[2022-11-17T17:29:14.202+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'SpaceX_data', 'scheduled__2022-10-26T00:00:00+00:00', '--job-id', '2637', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpab38ujov']
+[2022-11-17T17:29:14.203+0000] {standard_task_runner.py:83} INFO - Job 2637: Subtask SpaceX_data
+[2022-11-17T17:29:14.279+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.SpaceX_data scheduled__2022-10-26T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:29:14.356+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=SpaceX_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T00:00:00+00:00
+[2022-11-17T17:29:14.357+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T17:29:14.358+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "curl -o /tmp/history.json -L 'https://api.spacexdata.com/v4/history'"]
+[2022-11-17T17:29:14.370+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T17:29:14.377+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2022-11-17T17:29:14.378+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2022-11-17T17:29:14.570+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6756    0  6756    0     0  35005      0 --:--:-- --:--:-- --:--:-- 35005
+[2022-11-17T17:29:14.573+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T17:29:14.606+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=SpaceX_data, execution_date=20221026T000000, start_date=20221117T172914, end_date=20221117T172914
+[2022-11-17T17:29:14.656+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:29:14.690+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

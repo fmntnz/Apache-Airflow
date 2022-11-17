@@ -1,0 +1,175 @@
+[2022-11-16T22:38:27.333+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Print_Imported_data scheduled__2022-10-04T00:00:00+00:00 [queued]>
+[2022-11-16T22:38:27.347+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Print_Imported_data scheduled__2022-10-04T00:00:00+00:00 [queued]>
+[2022-11-16T22:38:27.348+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:38:27.350+0000] {taskinstance.py:1363} INFO - Starting attempt 3 of 3
+[2022-11-16T22:38:27.351+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:38:27.378+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): Print_Imported_data> on 2022-10-04 00:00:00+00:00
+[2022-11-16T22:38:27.388+0000] {standard_task_runner.py:55} INFO - Started process 6694 to run task
+[2022-11-16T22:38:27.393+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Print_Imported_data', 'scheduled__2022-10-04T00:00:00+00:00', '--job-id', '1720', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp73exxpvv']
+[2022-11-16T22:38:27.394+0000] {standard_task_runner.py:83} INFO - Job 1720: Subtask Print_Imported_data
+[2022-11-16T22:38:27.485+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Print_Imported_data scheduled__2022-10-04T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T22:38:27.606+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Print_Imported_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-04T00:00:00+00:00
+[2022-11-16T22:38:27.609+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T22:38:27.610+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'ls /tmp/ && head /tmp/platzi_data.csv']
+[2022-11-16T22:38:27.627+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T22:38:27.639+0000] {subprocess.py:93} INFO - ***tmpc8e5_oci
+[2022-11-16T22:38:27.641+0000] {subprocess.py:93} INFO - ***tmpk5xxq3nx
+[2022-11-16T22:38:27.642+0000] {subprocess.py:93} INFO - ***tmplkvca7ip
+[2022-11-16T22:38:27.643+0000] {subprocess.py:93} INFO - ***tmpodkacs8z
+[2022-11-16T22:38:27.644+0000] {subprocess.py:93} INFO - file.txt
+[2022-11-16T22:38:27.645+0000] {subprocess.py:93} INFO - history.json
+[2022-11-16T22:38:27.646+0000] {subprocess.py:93} INFO - platzi_data_20221001.csv
+[2022-11-16T22:38:27.647+0000] {subprocess.py:93} INFO - platzi_data_20221002.csv
+[2022-11-16T22:38:27.648+0000] {subprocess.py:93} INFO - platzi_data_20221003.csv
+[2022-11-16T22:38:27.649+0000] {subprocess.py:93} INFO - platzi_data_20221004.csv
+[2022-11-16T22:38:27.650+0000] {subprocess.py:93} INFO - platzi_data_20221005.csv
+[2022-11-16T22:38:27.652+0000] {subprocess.py:93} INFO - platzi_data_20221006.csv
+[2022-11-16T22:38:27.653+0000] {subprocess.py:93} INFO - platzi_data_20221007.csv
+[2022-11-16T22:38:27.654+0000] {subprocess.py:93} INFO - platzi_data_20221008.csv
+[2022-11-16T22:38:27.655+0000] {subprocess.py:93} INFO - platzi_data_20221009.csv
+[2022-11-16T22:38:27.656+0000] {subprocess.py:93} INFO - platzi_data_20221010.csv
+[2022-11-16T22:38:27.657+0000] {subprocess.py:93} INFO - platzi_data_20221011.csv
+[2022-11-16T22:38:27.658+0000] {subprocess.py:93} INFO - platzi_data_20221012.csv
+[2022-11-16T22:38:27.659+0000] {subprocess.py:93} INFO - platzi_data_20221013.csv
+[2022-11-16T22:38:27.660+0000] {subprocess.py:93} INFO - platzi_data_20221014.csv
+[2022-11-16T22:38:27.661+0000] {subprocess.py:93} INFO - platzi_data_20221015.csv
+[2022-11-16T22:38:27.662+0000] {subprocess.py:93} INFO - platzi_data_20221016.csv
+[2022-11-16T22:38:27.662+0000] {subprocess.py:93} INFO - platzi_data_20221017.csv
+[2022-11-16T22:38:27.663+0000] {subprocess.py:93} INFO - platzi_data_20221018.csv
+[2022-11-16T22:38:27.663+0000] {subprocess.py:93} INFO - platzi_data_20221019.csv
+[2022-11-16T22:38:27.664+0000] {subprocess.py:93} INFO - platzi_data_20221020.csv
+[2022-11-16T22:38:27.665+0000] {subprocess.py:93} INFO - platzi_data_20221021.csv
+[2022-11-16T22:38:27.665+0000] {subprocess.py:93} INFO - platzi_data_20221022.csv
+[2022-11-16T22:38:27.666+0000] {subprocess.py:93} INFO - platzi_data_20221023.csv
+[2022-11-16T22:38:27.668+0000] {subprocess.py:93} INFO - platzi_data_20221024.csv
+[2022-11-16T22:38:27.669+0000] {subprocess.py:93} INFO - platzi_data_20221025.csv
+[2022-11-16T22:38:27.671+0000] {subprocess.py:93} INFO - platzi_data_20221026.csv
+[2022-11-16T22:38:27.673+0000] {subprocess.py:93} INFO - platzi_data_20221027.csv
+[2022-11-16T22:38:27.674+0000] {subprocess.py:93} INFO - platzi_data_20221028.csv
+[2022-11-16T22:38:27.675+0000] {subprocess.py:93} INFO - platzi_data_20221029.csv
+[2022-11-16T22:38:27.676+0000] {subprocess.py:93} INFO - platzi_data_20221030.csv
+[2022-11-16T22:38:27.677+0000] {subprocess.py:93} INFO - platzi_data_20221031.csv
+[2022-11-16T22:38:27.678+0000] {subprocess.py:93} INFO - platzi_data_20221101.csv
+[2022-11-16T22:38:27.679+0000] {subprocess.py:93} INFO - platzi_data_20221102.csv
+[2022-11-16T22:38:27.680+0000] {subprocess.py:93} INFO - platzi_data_20221103.csv
+[2022-11-16T22:38:27.680+0000] {subprocess.py:93} INFO - platzi_data_20221104.csv
+[2022-11-16T22:38:27.681+0000] {subprocess.py:93} INFO - platzi_data_20221105.csv
+[2022-11-16T22:38:27.682+0000] {subprocess.py:93} INFO - platzi_data_20221106.csv
+[2022-11-16T22:38:27.683+0000] {subprocess.py:93} INFO - platzi_data_20221107.csv
+[2022-11-16T22:38:27.684+0000] {subprocess.py:93} INFO - pymp-8yik9lbi
+[2022-11-16T22:38:27.685+0000] {subprocess.py:93} INFO - pymp-y00k7agg
+[2022-11-16T22:38:27.686+0000] {subprocess.py:93} INFO - reponse_20221001.txt
+[2022-11-16T22:38:27.688+0000] {subprocess.py:93} INFO - reponse_20221002.txt
+[2022-11-16T22:38:27.689+0000] {subprocess.py:93} INFO - reponse_20221003.txt
+[2022-11-16T22:38:27.691+0000] {subprocess.py:93} INFO - reponse_20221004.txt
+[2022-11-16T22:38:27.692+0000] {subprocess.py:93} INFO - reponse_20221005.txt
+[2022-11-16T22:38:27.694+0000] {subprocess.py:93} INFO - reponse_20221006.txt
+[2022-11-16T22:38:27.695+0000] {subprocess.py:93} INFO - reponse_20221007.txt
+[2022-11-16T22:38:27.696+0000] {subprocess.py:93} INFO - reponse_20221008.txt
+[2022-11-16T22:38:27.697+0000] {subprocess.py:93} INFO - reponse_20221009.txt
+[2022-11-16T22:38:27.699+0000] {subprocess.py:93} INFO - reponse_20221010.txt
+[2022-11-16T22:38:27.700+0000] {subprocess.py:93} INFO - reponse_20221011.txt
+[2022-11-16T22:38:27.701+0000] {subprocess.py:93} INFO - reponse_20221012.txt
+[2022-11-16T22:38:27.702+0000] {subprocess.py:93} INFO - reponse_20221013.txt
+[2022-11-16T22:38:27.703+0000] {subprocess.py:93} INFO - reponse_20221014.txt
+[2022-11-16T22:38:27.704+0000] {subprocess.py:93} INFO - reponse_20221015.txt
+[2022-11-16T22:38:27.705+0000] {subprocess.py:93} INFO - reponse_20221016.txt
+[2022-11-16T22:38:27.707+0000] {subprocess.py:93} INFO - reponse_20221017.txt
+[2022-11-16T22:38:27.709+0000] {subprocess.py:93} INFO - reponse_20221018.txt
+[2022-11-16T22:38:27.710+0000] {subprocess.py:93} INFO - reponse_20221019.txt
+[2022-11-16T22:38:27.711+0000] {subprocess.py:93} INFO - reponse_20221020.txt
+[2022-11-16T22:38:27.712+0000] {subprocess.py:93} INFO - reponse_20221021.txt
+[2022-11-16T22:38:27.713+0000] {subprocess.py:93} INFO - reponse_20221022.txt
+[2022-11-16T22:38:27.713+0000] {subprocess.py:93} INFO - reponse_20221023.txt
+[2022-11-16T22:38:27.715+0000] {subprocess.py:93} INFO - reponse_20221024.txt
+[2022-11-16T22:38:27.716+0000] {subprocess.py:93} INFO - reponse_20221025.txt
+[2022-11-16T22:38:27.717+0000] {subprocess.py:93} INFO - reponse_20221026.txt
+[2022-11-16T22:38:27.718+0000] {subprocess.py:93} INFO - reponse_20221027.txt
+[2022-11-16T22:38:27.718+0000] {subprocess.py:93} INFO - reponse_20221028.txt
+[2022-11-16T22:38:27.719+0000] {subprocess.py:93} INFO - reponse_20221029.txt
+[2022-11-16T22:38:27.720+0000] {subprocess.py:93} INFO - reponse_20221030.txt
+[2022-11-16T22:38:27.721+0000] {subprocess.py:93} INFO - reponse_20221031.txt
+[2022-11-16T22:38:27.722+0000] {subprocess.py:93} INFO - reponse_20221101.txt
+[2022-11-16T22:38:27.723+0000] {subprocess.py:93} INFO - reponse_20221102.txt
+[2022-11-16T22:38:27.724+0000] {subprocess.py:93} INFO - reponse_20221103.txt
+[2022-11-16T22:38:27.725+0000] {subprocess.py:93} INFO - reponse_20221104.txt
+[2022-11-16T22:38:27.726+0000] {subprocess.py:93} INFO - reponse_20221105.txt
+[2022-11-16T22:38:27.727+0000] {subprocess.py:93} INFO - reponse_20221106.txt
+[2022-11-16T22:38:27.728+0000] {subprocess.py:93} INFO - reponse_20221107.txt
+[2022-11-16T22:38:27.728+0000] {subprocess.py:93} INFO - reponse_20221108.txt
+[2022-11-16T22:38:27.729+0000] {subprocess.py:93} INFO - reponse_20221109.txt
+[2022-11-16T22:38:27.730+0000] {subprocess.py:93} INFO - reponse_20221110.txt
+[2022-11-16T22:38:27.731+0000] {subprocess.py:93} INFO - reponse_20221111.txt
+[2022-11-16T22:38:27.732+0000] {subprocess.py:93} INFO - reponse_20221112.txt
+[2022-11-16T22:38:27.733+0000] {subprocess.py:93} INFO - reponse_20221113.txt
+[2022-11-16T22:38:27.734+0000] {subprocess.py:93} INFO - reponse_20221114.txt
+[2022-11-16T22:38:27.735+0000] {subprocess.py:93} INFO - reponse_20221115.txt
+[2022-11-16T22:38:27.736+0000] {subprocess.py:93} INFO - tmp061o5asr
+[2022-11-16T22:38:27.737+0000] {subprocess.py:93} INFO - tmp1b_v374g
+[2022-11-16T22:38:27.737+0000] {subprocess.py:93} INFO - tmp2n3y4qb3
+[2022-11-16T22:38:27.738+0000] {subprocess.py:93} INFO - tmp2ztydtyd
+[2022-11-16T22:38:27.739+0000] {subprocess.py:93} INFO - tmp546oqdk0
+[2022-11-16T22:38:27.739+0000] {subprocess.py:93} INFO - tmp57roj99h
+[2022-11-16T22:38:27.740+0000] {subprocess.py:93} INFO - tmp5lejojs5
+[2022-11-16T22:38:27.741+0000] {subprocess.py:93} INFO - tmp5nj2onwa
+[2022-11-16T22:38:27.741+0000] {subprocess.py:93} INFO - tmp64cxrvul
+[2022-11-16T22:38:27.742+0000] {subprocess.py:93} INFO - tmp6g4l21c1
+[2022-11-16T22:38:27.743+0000] {subprocess.py:93} INFO - tmp7c6bgots
+[2022-11-16T22:38:27.743+0000] {subprocess.py:93} INFO - tmp7khebugo
+[2022-11-16T22:38:27.744+0000] {subprocess.py:93} INFO - tmp7lvtz6wk
+[2022-11-16T22:38:27.744+0000] {subprocess.py:93} INFO - tmp8_n1aj39
+[2022-11-16T22:38:27.745+0000] {subprocess.py:93} INFO - tmp8c_dsk2e
+[2022-11-16T22:38:27.745+0000] {subprocess.py:93} INFO - tmp928ntdt7
+[2022-11-16T22:38:27.746+0000] {subprocess.py:93} INFO - tmp9503grtb
+[2022-11-16T22:38:27.748+0000] {subprocess.py:93} INFO - tmp_afh1uos
+[2022-11-16T22:38:27.751+0000] {subprocess.py:93} INFO - tmp_m6lsnw3
+[2022-11-16T22:38:27.752+0000] {subprocess.py:93} INFO - tmp_vy6n6_q
+[2022-11-16T22:38:27.754+0000] {subprocess.py:93} INFO - tmpcnj5oj8y
+[2022-11-16T22:38:27.755+0000] {subprocess.py:93} INFO - tmpcu_pom_6
+[2022-11-16T22:38:27.757+0000] {subprocess.py:93} INFO - tmpdmc2g1zb
+[2022-11-16T22:38:27.758+0000] {subprocess.py:93} INFO - tmpe4k1ogev
+[2022-11-16T22:38:27.759+0000] {subprocess.py:93} INFO - tmpg_n88zm7
+[2022-11-16T22:38:27.761+0000] {subprocess.py:93} INFO - tmpgg8mkst1
+[2022-11-16T22:38:27.762+0000] {subprocess.py:93} INFO - tmpgi8v82jx
+[2022-11-16T22:38:27.777+0000] {subprocess.py:93} INFO - tmpiez6kail
+[2022-11-16T22:38:27.785+0000] {subprocess.py:93} INFO - tmpj1n4wxza
+[2022-11-16T22:38:27.786+0000] {subprocess.py:93} INFO - tmpjsznho2e
+[2022-11-16T22:38:27.787+0000] {subprocess.py:93} INFO - tmpkrg9_cgk
+[2022-11-16T22:38:27.788+0000] {subprocess.py:93} INFO - tmpl13ymsfs
+[2022-11-16T22:38:27.789+0000] {subprocess.py:93} INFO - tmplrbhl64b
+[2022-11-16T22:38:27.791+0000] {subprocess.py:93} INFO - tmpn38ozedg
+[2022-11-16T22:38:27.792+0000] {subprocess.py:93} INFO - tmpn96u_4ih
+[2022-11-16T22:38:27.794+0000] {subprocess.py:93} INFO - tmpo3nf6k5c
+[2022-11-16T22:38:27.795+0000] {subprocess.py:93} INFO - tmpoy_ljy8t
+[2022-11-16T22:38:27.796+0000] {subprocess.py:93} INFO - tmpp4w9yq6x
+[2022-11-16T22:38:27.797+0000] {subprocess.py:93} INFO - tmppfidxzjr
+[2022-11-16T22:38:27.799+0000] {subprocess.py:93} INFO - tmpr681bhfw
+[2022-11-16T22:38:27.800+0000] {subprocess.py:93} INFO - tmpr9102hwf
+[2022-11-16T22:38:27.804+0000] {subprocess.py:93} INFO - tmpt4qo16oq
+[2022-11-16T22:38:27.805+0000] {subprocess.py:93} INFO - tmptn832g5z
+[2022-11-16T22:38:27.807+0000] {subprocess.py:93} INFO - tmpu9qbl0wh
+[2022-11-16T22:38:27.808+0000] {subprocess.py:93} INFO - tmpuq8ywung
+[2022-11-16T22:38:27.809+0000] {subprocess.py:93} INFO - tmpv606o9_9
+[2022-11-16T22:38:27.809+0000] {subprocess.py:93} INFO - tmpxf7g1lc4
+[2022-11-16T22:38:27.810+0000] {subprocess.py:93} INFO - tmpxktobcjf
+[2022-11-16T22:38:27.811+0000] {subprocess.py:93} INFO - tmpz91iizm7
+[2022-11-16T22:38:27.812+0000] {subprocess.py:93} INFO - head: cannot open '/tmp/platzi_data.csv' for reading: No such file or directory
+[2022-11-16T22:38:27.813+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-11-16T22:38:27.833+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-11-16T22:38:27.843+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=MyPersonalAirflowProject, task_id=Print_Imported_data, execution_date=20221004T000000, start_date=20221116T223827, end_date=20221116T223827
+[2022-11-16T22:38:27.871+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1720 for task Print_Imported_data (Bash command failed. The command returned a non-zero exit code 1.; 6694)
+[2022-11-16T22:38:27.900+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-16T22:38:27.967+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2022-11-17T17:07:25.488+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T17:07:25.502+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-17T17:07:25.503+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:07:25.504+0000] {taskinstance.py:1363} INFO - Starting attempt 8 of 8
+[2022-11-17T17:07:25.505+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:07:25.528+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): Marketing_team_Notification> on 2022-11-16 00:00:00+00:00
+[2022-11-17T17:07:25.539+0000] {standard_task_runner.py:55} INFO - Started process 6113 to run task
+[2022-11-17T17:07:25.543+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Marketing_team_Notification', 'scheduled__2022-11-16T00:00:00+00:00', '--job-id', '2433', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpi9iugvq7']
+[2022-11-17T17:07:25.544+0000] {standard_task_runner.py:83} INFO - Job 2433: Subtask Marketing_team_Notification
+[2022-11-17T17:07:25.635+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-11-16T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:07:30.054+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Marketing_team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=8
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-16T00:00:00+00:00
+[2022-11-17T17:07:30.057+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T17:07:30.059+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Hi Marketing team, Space X data for 2022-11-16 are now available!.. Please check them out!"']
+[2022-11-17T17:07:30.230+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T17:07:30.985+0000] {subprocess.py:93} INFO - Hi Marketing team, Space X data for 2022-11-16 are now available!.. Please check them out!
+[2022-11-17T17:07:30.986+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T17:07:31.453+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=Marketing_team_Notification, execution_date=20221116T000000, start_date=20221117T170725, end_date=20221117T170731
+[2022-11-17T17:07:32.110+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:07:35.751+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

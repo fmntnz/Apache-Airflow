@@ -1,0 +1,14 @@
+[2022-11-10T04:14:08.355+0000] {processor.py:154} INFO - Started process (PID=2048) to work on /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:08.358+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/5.2-orquestacion.py for tasks to queue
+[2022-11-10T04:14:08.360+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:08.360+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:08.423+0000] {processor.py:766} INFO - DAG(s) dict_keys(['5-orquestation_2']) retrieved from /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:08.530+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:08.530+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:08.596+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:08.596+0000] {dag.py:3340} INFO - Setting next_dagrun for 5-orquestation_2 to 2022-01-03T07:00:00+00:00, run_after=2022-01-10T07:00:00+00:00
+[2022-11-10T04:14:08.668+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/5.2-orquestacion.py took 0.318 seconds
+[2022-11-10T04:14:39.567+0000] {processor.py:154} INFO - Started process (PID=2079) to work on /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:39.572+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/5.2-orquestacion.py for tasks to queue
+[2022-11-10T04:14:39.574+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:39.573+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:39.648+0000] {processor.py:766} INFO - DAG(s) dict_keys(['5-orquestation_2']) retrieved from /opt/airflow/dags/5.2-orquestacion.py
+[2022-11-10T04:14:39.769+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:39.769+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:39.824+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:39.823+0000] {dag.py:3340} INFO - Setting next_dagrun for 5-orquestation_2 to 2022-01-03T07:00:00+00:00, run_after=2022-01-10T07:00:00+00:00
+[2022-11-10T04:14:39.914+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/5.2-orquestacion.py took 0.352 seconds

@@ -1,0 +1,28 @@
+[2022-11-16T20:29:26.002+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 10-branching.start_15_june scheduled__2022-07-20T00:00:00+00:00 [queued]>
+[2022-11-16T20:29:26.056+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: 10-branching.start_15_june scheduled__2022-07-20T00:00:00+00:00 [queued]>
+[2022-11-16T20:29:26.059+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T20:29:26.063+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T20:29:26.066+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T20:29:26.125+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): start_15_june> on 2022-07-20 00:00:00+00:00
+[2022-11-16T20:29:26.138+0000] {standard_task_runner.py:55} INFO - Started process 191 to run task
+[2022-11-16T20:29:26.151+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '10-branching', 'start_15_june', 'scheduled__2022-07-20T00:00:00+00:00', '--job-id', '1259', '--raw', '--subdir', 'DAGS_FOLDER/10-branchpythonoperator.py', '--cfg-path', '/tmp/tmplrb26g90']
+[2022-11-16T20:29:26.153+0000] {standard_task_runner.py:83} INFO - Job 1259: Subtask start_15_june
+[2022-11-16T20:29:26.341+0000] {task_command.py:376} INFO - Running <TaskInstance: 10-branching.start_15_june scheduled__2022-07-20T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T20:29:26.578+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=10-branching
+AIRFLOW_CTX_TASK_ID=start_15_june
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-20T00:00:00+00:00
+[2022-11-16T20:29:26.585+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T20:29:26.587+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo 'Running 2022-07-20'"]
+[2022-11-16T20:29:26.625+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T20:29:26.628+0000] {subprocess.py:93} INFO - Running 2022-07-20
+[2022-11-16T20:29:26.630+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-16T20:29:26.704+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=10-branching, task_id=start_15_june, execution_date=20220720T000000, start_date=20221116T202926, end_date=20221116T202926
+[2022-11-16T20:29:26.777+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T20:29:26.867+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

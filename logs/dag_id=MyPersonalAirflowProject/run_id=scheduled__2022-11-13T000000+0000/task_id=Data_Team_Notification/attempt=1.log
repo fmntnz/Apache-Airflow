@@ -1,0 +1,46 @@
+[2022-11-17T16:48:31.029+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [queued]>
+[2022-11-17T16:48:31.042+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [queued]>
+[2022-11-17T16:48:31.043+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:48:31.390+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:48:31.391+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:48:31.880+0000] {taskinstance.py:1383} INFO - Executing <Task(NotifyOperator): Data_Team_Notification> on 2022-11-13 00:00:00+00:00
+[2022-11-17T16:48:31.894+0000] {standard_task_runner.py:55} INFO - Started process 5072 to run task
+[2022-11-17T16:48:31.898+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Data_Team_Notification', 'scheduled__2022-11-13T00:00:00+00:00', '--job-id', '2374', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp88y0vx8e']
+[2022-11-17T16:48:31.900+0000] {standard_task_runner.py:83} INFO - Job 2374: Subtask Data_Team_Notification
+[2022-11-17T16:48:32.546+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:48:34.640+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Data_Team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-13T00:00:00+00:00
+[2022-11-17T16:48:34.641+0000] {logging_mixin.py:120} INFO - Hi Data team, Space X data for {ds} are now available!.. Please check them out!
+[2022-11-17T16:48:34.651+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=Data_Team_Notification, execution_date=20221113T000000, start_date=20221117T164831, end_date=20221117T164834
+[2022-11-17T16:48:35.870+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:48:36.513+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:38:21.380+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [queued]>
+[2022-11-17T17:38:21.396+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [queued]>
+[2022-11-17T17:38:21.397+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:38:21.397+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:38:21.398+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:38:21.422+0000] {taskinstance.py:1383} INFO - Executing <Task(NotifyOperator): Data_Team_Notification> on 2022-11-13 00:00:00+00:00
+[2022-11-17T17:38:21.429+0000] {standard_task_runner.py:55} INFO - Started process 8658 to run task
+[2022-11-17T17:38:21.432+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Data_Team_Notification', 'scheduled__2022-11-13T00:00:00+00:00', '--job-id', '2784', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpbb56mjal']
+[2022-11-17T17:38:21.433+0000] {standard_task_runner.py:83} INFO - Job 2784: Subtask Data_Team_Notification
+[2022-11-17T17:38:21.510+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Data_Team_Notification scheduled__2022-11-13T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:38:21.595+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Data_Team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-13T00:00:00+00:00
+[2022-11-17T17:38:21.596+0000] {logging_mixin.py:120} INFO - Hi Data team, Space X data for 2022-11-17  are now available!.. Please check them out!
+[2022-11-17T17:38:21.610+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=Data_Team_Notification, execution_date=20221113T000000, start_date=20221117T173821, end_date=20221117T173821
+[2022-11-17T17:38:21.645+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:38:21.667+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

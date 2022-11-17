@@ -1,0 +1,14 @@
+[2022-11-10T04:14:02.745+0000] {processor.py:154} INFO - Started process (PID=2029) to work on /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:02.746+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/7.3-filesensor.py for tasks to queue
+[2022-11-10T04:14:02.747+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:02.747+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:02.820+0000] {processor.py:766} INFO - DAG(s) dict_keys(['7-filesensor_3']) retrieved from /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:05.618+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:05.617+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:05.667+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:05.667+0000] {dag.py:3340} INFO - Setting next_dagrun for 7-filesensor_3 to None, run_after=None
+[2022-11-10T04:14:05.741+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/7.3-filesensor.py took 2.999 seconds
+[2022-11-10T04:14:36.748+0000] {processor.py:154} INFO - Started process (PID=2067) to work on /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:36.762+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/7.3-filesensor.py for tasks to queue
+[2022-11-10T04:14:36.763+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:36.763+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:36.875+0000] {processor.py:766} INFO - DAG(s) dict_keys(['7-filesensor_3']) retrieved from /opt/airflow/dags/7.3-filesensor.py
+[2022-11-10T04:14:37.263+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:37.262+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:37.311+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:37.311+0000] {dag.py:3340} INFO - Setting next_dagrun for 7-filesensor_3 to None, run_after=None
+[2022-11-10T04:14:37.366+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/7.3-filesensor.py took 0.622 seconds

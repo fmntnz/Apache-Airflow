@@ -1,0 +1,116 @@
+[2022-11-16T21:03:18.998+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-16T21:03:19.011+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-16T21:03:19.012+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:03:19.705+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T21:03:19.706+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:03:19.818+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): nasa_verification_task> on 2022-11-04 00:00:00+00:00
+[2022-11-16T21:03:19.892+0000] {standard_task_runner.py:55} INFO - Started process 1472 to run task
+[2022-11-16T21:03:19.895+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'nasa_verification_task', 'scheduled__2022-11-04T00:00:00+00:00', '--job-id', '1312', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpv_tuc_az']
+[2022-11-16T21:03:19.896+0000] {standard_task_runner.py:83} INFO - Job 1312: Subtask nasa_verification_task
+[2022-11-16T21:03:20.293+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T21:03:20.432+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=nasa_verification_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-04T00:00:00+00:00
+[2022-11-16T21:03:20.434+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T21:03:20.436+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 20 && echo ÖK"> /tmp/reponse_20221104.txt']
+[2022-11-16T21:03:20.449+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T21:03:20.451+0000] {subprocess.py:93} INFO - /bin/bash: -c: line 1: unexpected EOF while looking for matching `"'
+[2022-11-16T21:03:20.452+0000] {subprocess.py:93} INFO - /bin/bash: -c: line 2: syntax error: unexpected end of file
+[2022-11-16T21:03:20.453+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2022-11-16T21:03:20.472+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-11-16T21:03:20.477+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=MyPersonalAirflowProject, task_id=nasa_verification_task, execution_date=20221104T000000, start_date=20221116T210319, end_date=20221116T210320
+[2022-11-16T21:03:20.497+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1312 for task nasa_verification_task (Bash command failed. The command returned a non-zero exit code 2.; 1472)
+[2022-11-16T21:03:20.554+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-11-16T21:03:20.580+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-16T22:31:09.715+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-16T22:31:09.731+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-16T22:31:09.732+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:31:09.732+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T22:31:09.733+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:31:09.753+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): nasa_verification_task> on 2022-11-04 00:00:00+00:00
+[2022-11-16T22:31:09.760+0000] {standard_task_runner.py:55} INFO - Started process 6139 to run task
+[2022-11-16T22:31:09.763+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'nasa_verification_task', 'scheduled__2022-11-04T00:00:00+00:00', '--job-id', '1644', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp8zzg27dc']
+[2022-11-16T22:31:09.764+0000] {standard_task_runner.py:83} INFO - Job 1644: Subtask nasa_verification_task
+[2022-11-16T22:31:09.838+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T22:31:09.927+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=nasa_verification_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-04T00:00:00+00:00
+[2022-11-16T22:31:09.930+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T22:31:09.931+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 20 && echo "OK"> /tmp/reponse_20221104.txt']
+[2022-11-16T22:31:09.944+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T22:31:30.059+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-16T22:31:30.164+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=nasa_verification_task, execution_date=20221104T000000, start_date=20221116T223109, end_date=20221116T223130
+[2022-11-16T22:31:30.259+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T22:31:30.418+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T16:42:17.175+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-17T16:42:17.190+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-17T16:42:17.191+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:42:17.192+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:42:17.192+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:42:17.211+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): nasa_verification_task> on 2022-11-04 00:00:00+00:00
+[2022-11-17T16:42:17.217+0000] {standard_task_runner.py:55} INFO - Started process 4556 to run task
+[2022-11-17T16:42:17.220+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'nasa_verification_task', 'scheduled__2022-11-04T00:00:00+00:00', '--job-id', '2296', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp22l4zetk']
+[2022-11-17T16:42:17.221+0000] {standard_task_runner.py:83} INFO - Job 2296: Subtask nasa_verification_task
+[2022-11-17T16:42:17.298+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:42:17.380+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=nasa_verification_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-04T00:00:00+00:00
+[2022-11-17T16:42:17.382+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T16:42:17.383+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 20 && echo "OK"> /tmp/reponse_20221104.txt']
+[2022-11-17T16:42:17.396+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T16:42:37.401+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T16:42:37.432+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=nasa_verification_task, execution_date=20221104T000000, start_date=20221117T164217, end_date=20221117T164237
+[2022-11-17T16:42:37.486+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:42:37.538+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:33:21.896+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-17T17:33:22.015+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [queued]>
+[2022-11-17T17:33:22.016+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:33:22.018+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:33:22.019+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:33:22.047+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): nasa_verification_task> on 2022-11-04 00:00:00+00:00
+[2022-11-17T17:33:22.054+0000] {standard_task_runner.py:55} INFO - Started process 8176 to run task
+[2022-11-17T17:33:22.057+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'nasa_verification_task', 'scheduled__2022-11-04T00:00:00+00:00', '--job-id', '2706', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpfmcd3r1o']
+[2022-11-17T17:33:22.058+0000] {standard_task_runner.py:83} INFO - Job 2706: Subtask nasa_verification_task
+[2022-11-17T17:33:22.125+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-11-04T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:33:22.213+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=nasa_verification_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-04T00:00:00+00:00
+[2022-11-17T17:33:22.215+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T17:33:22.216+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 20 && echo "OK"> /tmp/reponse_20221104.txt']
+[2022-11-17T17:33:22.229+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T17:33:42.217+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T17:33:42.254+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=nasa_verification_task, execution_date=20221104T000000, start_date=20221117T173321, end_date=20221117T173342
+[2022-11-17T17:33:42.293+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:33:42.335+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

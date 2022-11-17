@@ -1,0 +1,14 @@
+[2022-11-10T04:14:07.673+0000] {processor.py:154} INFO - Started process (PID=2044) to work on /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:07.675+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/3-dependencias.py for tasks to queue
+[2022-11-10T04:14:07.678+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:07.678+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:07.778+0000] {processor.py:766} INFO - DAG(s) dict_keys(['3-dependencias']) retrieved from /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:08.085+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:08.085+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:08.165+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:08.164+0000] {dag.py:3340} INFO - Setting next_dagrun for 3-dependencias to 2022-11-01T00:00:00+00:00, run_after=2022-11-01T00:00:00+00:00
+[2022-11-10T04:14:08.248+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/3-dependencias.py took 0.581 seconds
+[2022-11-10T04:14:38.960+0000] {processor.py:154} INFO - Started process (PID=2077) to work on /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:38.971+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/3-dependencias.py for tasks to queue
+[2022-11-10T04:14:38.973+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:38.973+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:39.091+0000] {processor.py:766} INFO - DAG(s) dict_keys(['3-dependencias']) retrieved from /opt/airflow/dags/3-dependencias.py
+[2022-11-10T04:14:39.204+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:39.204+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-10T04:14:39.278+0000] {logging_mixin.py:120} INFO - [2022-11-10T04:14:39.278+0000] {dag.py:3340} INFO - Setting next_dagrun for 3-dependencias to 2022-11-01T00:00:00+00:00, run_after=2022-11-01T00:00:00+00:00
+[2022-11-10T04:14:39.503+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/3-dependencias.py took 0.549 seconds

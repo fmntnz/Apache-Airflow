@@ -1,0 +1,104 @@
+[2022-11-16T21:33:01.429+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-16T21:33:01.459+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-16T21:33:01.460+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:33:01.462+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T21:33:01.463+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:33:01.489+0000] {taskinstance.py:1383} INFO - Executing <Task(FileSensor): waiting_nasa_confirmation> on 2022-10-31 00:00:00+00:00
+[2022-11-16T21:33:01.499+0000] {standard_task_runner.py:55} INFO - Started process 3037 to run task
+[2022-11-16T21:33:01.503+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'waiting_nasa_confirmation', 'scheduled__2022-10-31T00:00:00+00:00', '--job-id', '1395', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp3qxgjgft']
+[2022-11-16T21:33:01.504+0000] {standard_task_runner.py:83} INFO - Job 1395: Subtask waiting_nasa_confirmation
+[2022-11-16T21:33:01.594+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T21:33:01.687+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=waiting_nasa_confirmation
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-31T00:00:00+00:00
+[2022-11-16T21:33:01.698+0000] {base.py:71} INFO - Using connection ID 'fs_default' for task execution.
+[2022-11-16T21:33:01.699+0000] {filesystem.py:58} INFO - Poking for file /tmp/reponse_20221031.txt
+[2022-11-16T21:33:01.700+0000] {filesystem.py:63} INFO - Found File /tmp/reponse_20221031.txt last modified: 20221116213253
+[2022-11-16T21:33:01.701+0000] {base.py:213} INFO - Success criteria met. Exiting.
+[2022-11-16T21:33:01.713+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=waiting_nasa_confirmation, execution_date=20221031T000000, start_date=20221116T213301, end_date=20221116T213301
+[2022-11-16T21:33:01.756+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T21:33:02.185+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-16T22:29:18.445+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-16T22:29:18.465+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-16T22:29:18.466+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:29:18.467+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T22:29:18.467+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:29:18.490+0000] {taskinstance.py:1383} INFO - Executing <Task(FileSensor): waiting_nasa_confirmation> on 2022-10-31 00:00:00+00:00
+[2022-11-16T22:29:18.498+0000] {standard_task_runner.py:55} INFO - Started process 5991 to run task
+[2022-11-16T22:29:18.502+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'waiting_nasa_confirmation', 'scheduled__2022-10-31T00:00:00+00:00', '--job-id', '1621', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpip45lwdx']
+[2022-11-16T22:29:18.503+0000] {standard_task_runner.py:83} INFO - Job 1621: Subtask waiting_nasa_confirmation
+[2022-11-16T22:29:18.578+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T22:29:18.671+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=waiting_nasa_confirmation
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-31T00:00:00+00:00
+[2022-11-16T22:29:18.683+0000] {base.py:71} INFO - Using connection ID 'fs_default' for task execution.
+[2022-11-16T22:29:18.684+0000] {filesystem.py:58} INFO - Poking for file /tmp/reponse_20221031.txt
+[2022-11-16T22:29:18.685+0000] {filesystem.py:63} INFO - Found File /tmp/reponse_20221031.txt last modified: 20221116222914
+[2022-11-16T22:29:18.686+0000] {base.py:213} INFO - Success criteria met. Exiting.
+[2022-11-16T22:29:18.698+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=waiting_nasa_confirmation, execution_date=20221031T000000, start_date=20221116T222918, end_date=20221116T222918
+[2022-11-16T22:29:18.773+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T22:29:18.824+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T16:40:32.658+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-17T16:40:32.673+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-17T16:40:32.674+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:40:32.674+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:40:32.675+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:40:32.697+0000] {taskinstance.py:1383} INFO - Executing <Task(FileSensor): waiting_nasa_confirmation> on 2022-10-31 00:00:00+00:00
+[2022-11-17T16:40:32.705+0000] {standard_task_runner.py:55} INFO - Started process 4387 to run task
+[2022-11-17T16:40:32.707+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'waiting_nasa_confirmation', 'scheduled__2022-10-31T00:00:00+00:00', '--job-id', '2265', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp_smg2x1n']
+[2022-11-17T16:40:32.708+0000] {standard_task_runner.py:83} INFO - Job 2265: Subtask waiting_nasa_confirmation
+[2022-11-17T16:40:32.799+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:40:32.910+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=waiting_nasa_confirmation
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-31T00:00:00+00:00
+[2022-11-17T16:40:32.922+0000] {base.py:71} INFO - Using connection ID 'fs_default' for task execution.
+[2022-11-17T16:40:32.922+0000] {filesystem.py:58} INFO - Poking for file /tmp/reponse_20221031.txt
+[2022-11-17T16:40:32.923+0000] {filesystem.py:63} INFO - Found File /tmp/reponse_20221031.txt last modified: 20221117164031
+[2022-11-17T16:40:32.924+0000] {base.py:213} INFO - Success criteria met. Exiting.
+[2022-11-17T16:40:32.938+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=waiting_nasa_confirmation, execution_date=20221031T000000, start_date=20221117T164032, end_date=20221117T164032
+[2022-11-17T16:40:32.962+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:40:33.020+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:31:39.680+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-17T17:31:39.700+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [queued]>
+[2022-11-17T17:31:39.700+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:31:39.701+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:31:39.701+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:31:39.721+0000] {taskinstance.py:1383} INFO - Executing <Task(FileSensor): waiting_nasa_confirmation> on 2022-10-31 00:00:00+00:00
+[2022-11-17T17:31:39.729+0000] {standard_task_runner.py:55} INFO - Started process 7999 to run task
+[2022-11-17T17:31:39.731+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'waiting_nasa_confirmation', 'scheduled__2022-10-31T00:00:00+00:00', '--job-id', '2675', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp09vi9q6c']
+[2022-11-17T17:31:39.732+0000] {standard_task_runner.py:83} INFO - Job 2675: Subtask waiting_nasa_confirmation
+[2022-11-17T17:31:39.795+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.waiting_nasa_confirmation scheduled__2022-10-31T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:31:39.870+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=waiting_nasa_confirmation
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-31T00:00:00+00:00
+[2022-11-17T17:31:39.879+0000] {base.py:71} INFO - Using connection ID 'fs_default' for task execution.
+[2022-11-17T17:31:39.880+0000] {filesystem.py:58} INFO - Poking for file /tmp/reponse_20221031.txt
+[2022-11-17T17:31:39.881+0000] {filesystem.py:63} INFO - Found File /tmp/reponse_20221031.txt last modified: 20221117173138
+[2022-11-17T17:31:39.881+0000] {base.py:213} INFO - Success criteria met. Exiting.
+[2022-11-17T17:31:39.892+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=waiting_nasa_confirmation, execution_date=20221031T000000, start_date=20221117T173139, end_date=20221117T173139
+[2022-11-17T17:31:39.945+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:31:39.985+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

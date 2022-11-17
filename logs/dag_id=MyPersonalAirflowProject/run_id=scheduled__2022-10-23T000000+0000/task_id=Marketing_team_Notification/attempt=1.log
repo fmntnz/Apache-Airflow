@@ -1,0 +1,56 @@
+[2022-11-17T16:35:56.901+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T16:35:56.916+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T16:35:56.917+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:35:56.918+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:35:56.918+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:35:56.937+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): Marketing_team_Notification> on 2022-10-23 00:00:00+00:00
+[2022-11-17T16:35:56.944+0000] {standard_task_runner.py:55} INFO - Started process 3993 to run task
+[2022-11-17T16:35:56.948+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Marketing_team_Notification', 'scheduled__2022-10-23T00:00:00+00:00', '--job-id', '2207', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpy75xkzvg']
+[2022-11-17T16:35:56.948+0000] {standard_task_runner.py:83} INFO - Job 2207: Subtask Marketing_team_Notification
+[2022-11-17T16:35:57.018+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:35:57.098+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Marketing_team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-23T00:00:00+00:00
+[2022-11-17T16:35:57.100+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T16:35:57.101+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Hi Marketing team, Space X data for 2022-10-23 are now available!.. Please check them out!"']
+[2022-11-17T16:35:57.113+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T16:35:57.115+0000] {subprocess.py:93} INFO - Hi Marketing team, Space X data for 2022-10-23 are now available!.. Please check them out!
+[2022-11-17T16:35:57.115+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T16:35:57.147+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=Marketing_team_Notification, execution_date=20221023T000000, start_date=20221117T163556, end_date=20221117T163557
+[2022-11-17T16:35:57.201+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:35:57.225+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:27:47.535+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T17:27:47.548+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [queued]>
+[2022-11-17T17:27:47.549+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:27:47.550+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:27:47.550+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:27:47.573+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): Marketing_team_Notification> on 2022-10-23 00:00:00+00:00
+[2022-11-17T17:27:47.580+0000] {standard_task_runner.py:55} INFO - Started process 7636 to run task
+[2022-11-17T17:27:47.582+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'Marketing_team_Notification', 'scheduled__2022-10-23T00:00:00+00:00', '--job-id', '2617', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpu_hi4wjl']
+[2022-11-17T17:27:47.583+0000] {standard_task_runner.py:83} INFO - Job 2617: Subtask Marketing_team_Notification
+[2022-11-17T17:27:47.653+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.Marketing_team_Notification scheduled__2022-10-23T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:27:47.748+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=Marketing_team_Notification
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-23T00:00:00+00:00
+[2022-11-17T17:27:47.749+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-17T17:27:47.751+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "Hi Marketing team, Space X data for 2022-10-23 are now available!.. Please check them out!"']
+[2022-11-17T17:27:47.763+0000] {subprocess.py:86} INFO - Output:
+[2022-11-17T17:27:47.765+0000] {subprocess.py:93} INFO - Hi Marketing team, Space X data for 2022-10-23 are now available!.. Please check them out!
+[2022-11-17T17:27:47.766+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-17T17:27:47.797+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=Marketing_team_Notification, execution_date=20221023T000000, start_date=20221117T172747, end_date=20221117T172747
+[2022-11-17T17:27:47.835+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:27:47.857+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

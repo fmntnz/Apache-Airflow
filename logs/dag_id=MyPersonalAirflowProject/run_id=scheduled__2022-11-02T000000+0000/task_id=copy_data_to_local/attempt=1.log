@@ -1,0 +1,69 @@
+[2022-11-16T22:30:35.868+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-16T22:30:35.885+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-16T22:30:35.886+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:30:35.887+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T22:30:35.887+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T22:30:35.910+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): copy_data_to_local> on 2022-11-02 00:00:00+00:00
+[2022-11-16T22:30:35.918+0000] {standard_task_runner.py:55} INFO - Started process 6094 to run task
+[2022-11-16T22:30:35.921+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'copy_data_to_local', 'scheduled__2022-11-02T00:00:00+00:00', '--job-id', '1636', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpiadmpkub']
+[2022-11-16T22:30:35.922+0000] {standard_task_runner.py:83} INFO - Job 1636: Subtask copy_data_to_local
+[2022-11-16T22:30:36.022+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T22:30:36.164+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=copy_data_to_local
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-02T00:00:00+00:00
+[2022-11-16T22:30:37.449+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-16T22:30:37.462+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=copy_data_to_local, execution_date=20221102T000000, start_date=20221116T223035, end_date=20221116T223037
+[2022-11-16T22:30:37.550+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T22:30:37.605+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T16:41:42.308+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-17T16:41:42.320+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-17T16:41:42.321+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:41:42.321+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T16:41:42.322+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T16:41:42.338+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): copy_data_to_local> on 2022-11-02 00:00:00+00:00
+[2022-11-17T16:41:42.344+0000] {standard_task_runner.py:55} INFO - Started process 4491 to run task
+[2022-11-17T16:41:42.348+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'copy_data_to_local', 'scheduled__2022-11-02T00:00:00+00:00', '--job-id', '2284', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp7d1ruv3p']
+[2022-11-17T16:41:42.348+0000] {standard_task_runner.py:83} INFO - Job 2284: Subtask copy_data_to_local
+[2022-11-17T16:41:42.415+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T16:41:42.495+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=copy_data_to_local
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-02T00:00:00+00:00
+[2022-11-17T16:41:42.748+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-17T16:41:42.764+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=copy_data_to_local, execution_date=20221102T000000, start_date=20221117T164142, end_date=20221117T164142
+[2022-11-17T16:41:42.802+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T16:41:42.837+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-11-17T17:32:44.453+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-17T17:32:44.554+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [queued]>
+[2022-11-17T17:32:44.554+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:32:44.555+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-17T17:32:44.555+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-17T17:32:44.573+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): copy_data_to_local> on 2022-11-02 00:00:00+00:00
+[2022-11-17T17:32:44.582+0000] {standard_task_runner.py:55} INFO - Started process 8112 to run task
+[2022-11-17T17:32:44.585+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'copy_data_to_local', 'scheduled__2022-11-02T00:00:00+00:00', '--job-id', '2694', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmpw7ve27dy']
+[2022-11-17T17:32:44.586+0000] {standard_task_runner.py:83} INFO - Job 2694: Subtask copy_data_to_local
+[2022-11-17T17:32:44.663+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.copy_data_to_local scheduled__2022-11-02T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-17T17:32:44.954+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=copy_data_to_local
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-02T00:00:00+00:00
+[2022-11-17T17:32:45.161+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-17T17:32:45.173+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=MyPersonalAirflowProject, task_id=copy_data_to_local, execution_date=20221102T000000, start_date=20221117T173244, end_date=20221117T173245
+[2022-11-17T17:32:45.200+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-17T17:32:45.271+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

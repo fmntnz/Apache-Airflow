@@ -1,0 +1,42 @@
+[2022-11-16T21:23:21.680+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-16T21:23:21.700+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-10-26T00:00:00+00:00 [queued]>
+[2022-11-16T21:23:21.701+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:23:21.702+0000] {taskinstance.py:1363} INFO - Starting attempt 3 of 3
+[2022-11-16T21:23:21.703+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T21:23:21.730+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): nasa_verification_task> on 2022-10-26 00:00:00+00:00
+[2022-11-16T21:23:21.739+0000] {standard_task_runner.py:55} INFO - Started process 2519 to run task
+[2022-11-16T21:23:21.742+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'MyPersonalAirflowProject', 'nasa_verification_task', 'scheduled__2022-10-26T00:00:00+00:00', '--job-id', '1362', '--raw', '--subdir', 'DAGS_FOLDER/FinalPersonalProject.py', '--cfg-path', '/tmp/tmp2qlv0z6r']
+[2022-11-16T21:23:21.743+0000] {standard_task_runner.py:83} INFO - Job 1362: Subtask nasa_verification_task
+[2022-11-16T21:23:21.849+0000] {task_command.py:376} INFO - Running <TaskInstance: MyPersonalAirflowProject.nasa_verification_task scheduled__2022-10-26T00:00:00+00:00 [running]> on host 638485efabe7
+[2022-11-16T21:23:21.971+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MyPersonalAirflowProject
+AIRFLOW_CTX_TASK_ID=nasa_verification_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-26T00:00:00+00:00
+[2022-11-16T21:23:21.973+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T21:23:21.975+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 20 && echo "OK"> /tmp/reponse_20221026.txt']
+[2022-11-16T21:23:21.995+0000] {subprocess.py:86} INFO - Output:
+[2022-11-16T21:23:31.888+0000] {local_task_job.py:228} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2022-11-16T21:23:31.900+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 2519. PIDs of all processes in the group: [2520, 2521, 2519]
+[2022-11-16T21:23:31.902+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 2519
+[2022-11-16T21:23:31.903+0000] {taskinstance.py:1562} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-11-16T21:23:31.903+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2022-11-16T21:23:31.922+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 191, in execute
+    cwd=self.cwd,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b''):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1564, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-11-16T21:23:31.933+0000] {taskinstance.py:1406} INFO - Marking task as UP_FOR_RETRY. dag_id=MyPersonalAirflowProject, task_id=nasa_verification_task, execution_date=20221026T000000, start_date=20221116T212321, end_date=20221116T212331
+[2022-11-16T21:23:31.956+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 1362 for task nasa_verification_task (Task received SIGTERM signal; 2519)
+[2022-11-16T21:23:32.021+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2520, status='terminated', started='21:23:21') (2520) terminated with exit code None
+[2022-11-16T21:23:32.025+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2521, status='terminated', started='21:23:21') (2521) terminated with exit code None
+[2022-11-16T21:23:32.026+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2519, status='terminated', exitcode=1, started='21:23:21') (2519) terminated with exit code 1

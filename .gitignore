@@ -517,3 +517,13 @@ logs/scheduler/2022-11-09/5.2-orquestacion.py.log
 logs/scheduler/2022-11-09/5.3-orquestacion.py.log
 logs/scheduler/2022-11-09/6.1-monitoring.py.log
 logs/scheduler/2022-11-09/6.2-monitoring.py.log
+logs/scheduler/2022-11-09/0-primerdag.py.log
+logs/scheduler/2022-11-09/1-bashoperator.py.log
+logs/scheduler/2022-11-09/2-pythonoperator.py.log
+logs/scheduler/2022-11-09/3-dependencias.py.log
+logs/scheduler/2022-11-09/4-customoperator.py.log
+logs/scheduler/2022-11-09/5.1-orquestacion.py.log
+logs/scheduler/2022-11-09/5.2-orquestacion.py.log
+logs/scheduler/2022-11-09/5.3-orquestacion.py.log
+logs/scheduler/2022-11-09/6.1-monitoring.py.log
+logs/scheduler/2022-11-09/6.2-monitoring.py.log
